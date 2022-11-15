@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background: rgb(212, 224, 255);
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.conteudo-login{
+            position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 50, 117);
+    outline: none;
+}
+
+
+.campo-user input:hover{
+    background: rgb(188, 186, 186);
+    border-radius: 5px;
+    text-align: center;
+    background: rgb(88, 153, 233);
+}
+
+.campo-password{
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.campo-password input:hover{
+    background: rgb(188, 186, 186);
+    border-radius: 5px;
+    text-align: center;
+    background: rgb(88, 153, 233);
+}
+
+.btn-login{
+    border-radius: 5px;
+    border: none;
+
+}
+
+.btn-login input:hover{
+    cursor: pointer;
+    background: rgb(88, 153, 233);
+    
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+  }
