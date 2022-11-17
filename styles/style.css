@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-image: url(https://www.10wallpaper.com/wallpaper/3840x2160/1712/Purple_blue_abstract_background_Design_4K_HD_3840x2160.jpg);
 }
 
 
@@ -22,6 +29,7 @@
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
+
 }
 
 input {
@@ -30,41 +38,38 @@ input {
     border: none;
     border-bottom: 2px solid rgb(0, 50, 117);
     outline: none;
+    text-align: center;
+    border-radius: 5px;
 }
 
 
 .campo-user input:hover{
-    background: rgb(188, 186, 186);
-    border-radius: 5px;
-    text-align: center;
     background: rgb(88, 153, 233);
 }
 
 .campo-password{
     margin: 20px;
     padding: 10px;
-    
+
 }
 
 .campo-password input:hover{
-    background: rgb(188, 186, 186);
-    border-radius: 5px;
-    text-align: center;
     background: rgb(88, 153, 233);
 }
 
 .btn-login{
     border-radius: 5px;
     border: none;
-
+    
 }
 
 .btn-login input:hover{
     cursor: pointer;
     background: rgb(88, 153, 233);
     
+    
 }
 
 input::placeholder {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 6, 92);
   }
