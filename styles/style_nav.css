@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(0, 40, 114);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav_pages a:hover{
+    opacity: 0.6;
+}
+
+.nav_pages ul li:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.nav_pages {
+    background: rgb(88, 153, 233);
+    justify-content: center;
+    height: 12vh;
+    list-style: none;
+    display: flex;
+    
+}
+
+
+.nav_pages ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    margin: 25px;
+}
+
+.nav_pages li {
+    letter-spacing: 2px;
+    margin-right: 20px;
+    border-bottom: 2px solid rgb(0, 50, 117);
+    padding: 10px;
+    background-color: rgb(212, 224, 255);
+    color: rgb(43, 70, 137);
+    border-radius: 5px;
+
+}
+
