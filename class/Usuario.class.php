@@ -5,11 +5,11 @@ class Usuario {
 
     public function login($usuario, $senha){
         global $pdo;
-
         
         $sql = "SELECT * FROM usuario WHERE usuario = :usuario AND senha = :senha";
         $sql = $pdo->prepare($sql);
         $sql->bindValue("usuario", $usuario);
+        // $sql->bindValue("senha", $senha);
         $sql->bindValue("senha", sha1($senha));
         $sql->execute();
 
@@ -17,7 +17,6 @@ class Usuario {
             $dado = $sql->fetch();
 
             $_SESSION['idUser'] = $dado['id'];
-
             return true;
         }else{
             return false;

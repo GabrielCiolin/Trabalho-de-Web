@@ -6,6 +6,7 @@ class RegisterUser {
 
     private $con;
     private $objfunc;
+    
     //Atributos do usuário
     private $id;
     private $usuario;
@@ -31,7 +32,6 @@ class RegisterUser {
     public function querySelection($data) {
         try {
             global $pdo;
-
             $this->id = $this->objfunc->base64($data, 2); //Decodifica o id
             $cst = $pdo->prepare("SELECT `id`, `name`, `senha` FROM `usuario` WHERE `id` = :id;");
             $cst->bindParam(":id", $this->id, PDO::PARAM_INT); //Parâmetro para evitar SQL Inject
